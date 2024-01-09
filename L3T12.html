@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SlideShow</title>
+    <style>
+        body{
+            background-color: rgb(41, 62, 79);
+        }
+        h1{
+            font-size: 2.1rem;
+            line-height: 1.4;
+            letter-spacing: 0.5rem;
+            color: rgb(208, 242, 255);
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        @keyframes slider {
+            0%{
+                background-image: url('https://cdn.britannica.com/86/170586-050-AB7FEFAE/Taj-Mahal-Agra-India.jpg');
+            }   
+            15%{
+                background-image: url('https://images.nationalgeographic.org/image/upload/t_edhub_resource_key_image/v1638892506/EducationHub/photos/the-great-wall-of-china.jpg');
+            }
+            30%{
+                background-image: url('https://media.tacdn.com/media/attractions-splice-spp-674x446/06/e5/0a/8c.jpg');
+            }
+            45%{
+                background-image: url('https://media.tacdn.com/media/attractions-splice-spp-674x446/11/85/44/8a.jpg');
+            }
+            60%{
+                background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Machu_Picchu%2C_Peru.jpg/1200px-Machu_Picchu%2C_Peru.jpg');
+            }
+            75%{
+                background-image: url('https://destinationlesstravel.com/wp-content/uploads/2022/10/The-Christ-the-Redeemer-with-Rio-de-Janeiro-in-the-background-as-seen-from-a-scenic-flight.jpg.webp');
+            }
+            90%{
+                background-image: url('https://cdn.britannica.com/36/162636-050-932C5D49/Colosseum-Rome-Italy.jpg');
+            }
+            100%{
+
+            }
+        }
+
+        .maindiv{
+            width: 60%;
+            height: 70%;
+            position: absolute;
+            left: 50%;
+            top: 55%;
+            transform: translate(-50%, -50%);
+            background-image: url('https://cdn.britannica.com/86/170586-050-AB7FEFAE/Taj-Mahal-Agra-India.jpg');
+            background-size: 100% 100%;
+            box-shadow: 1px 2px 10px 5px white;
+            animation: slider 25s infinite linear;
+        }
+    </style>
+</head>
+<body>
+    <h1><B>SlideShow of Seven Wonders</B></h1>
+    <div class="maindiv">
+
+    </div>
+</body>
+</html>

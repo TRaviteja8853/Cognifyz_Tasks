@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greetings</title>
+    <script>
+        function greeting(){
+            let hour = new Date().getHours();
+            var g;
+            if(hour >= 5 && hour <= 12){
+                g = "Good Morning..!";
+            }
+            else if (hour > 12 && hour <= 16) {
+                g = "Good Afternood..!";
+            }
+            else if (hour > 17 && hour <= 20) {
+                g = "Good Evening..!";
+            }
+            else{
+                g = "Good Night..!";
+            }
+            alert(g);
+        }
+    </script>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        body{
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>click here to get wishes according to time..!</h1>
+    <button onclick="greeting()">Click me for Greeting</button><br/>
+</body>
+</html>

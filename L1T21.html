@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Changer</title>
+    <script>
+        const btn = document.getElementById("but");
+        let Num = () => {
+            return Math.floor(Math.random() * 256);
+        }
+        let changeColor = () => {
+            let Color = `rgb(${Num()},${Num()},${Num()})`;
+            document.body.style.backgroundColor = Color;
+        }
+        btn.addEventListener("click", changeColor);
+        window.addEventListener("load", changeColor); 
+        // console.log(num);
+    </script>
+    <style>
+        body{
+            margin-top: 300px ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: aqua;
+        }
+        button{
+            border: 2px solid white;
+            outline: none;
+            border-radius: 10px;
+            height: 60px;
+            width: 150px;
+        }
+        button:hover{
+            border: 2px solid white;
+            outline: none;
+            border-radius: 10px;
+            height: 65px;
+            width: 155px;
+        }
+    </style>
+</head>
+<body>
+    <button id="but" onclick="changeColor()">
+        Change Color
+    </button>
+</body>
+</html>
